@@ -1,7 +1,7 @@
 install:
 	pip install -r requirements.txt
 
-nothing:
-	#this is nothing lol
+lint:
+	pylint --disable=R,C hello.py
 
-all: install nothing
+all: install lint
